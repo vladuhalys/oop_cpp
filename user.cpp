@@ -8,7 +8,7 @@ User::User() {
 }
 User::User(string* login) : User()
 {
-	this->login = login;
+	setLogin(login);
 }
 User::User(string* login, string* password) : User(login)
 {
@@ -29,17 +29,21 @@ void User::setLogin(string* login)
 	{
 		cout << AppError::text_for_login_is_null << endl;
 	}
-	else if (login->size() < 3)
-	{
-		cout << AppError::text_for_login << endl;
-	}
-	else if (login->empty())
-	{
-		cout << AppError::text_for_login_empty << endl;
-	}
 	else
 	{
-		this->login = login;
+		trim(*login);
+		if (login->size() < 3)
+		{
+			cout << AppError::text_for_login << endl;
+		}
+		else if (login->empty())
+		{
+			cout << AppError::text_for_login_empty << endl;
+		}
+		else
+		{
+			this->login = login;
+		}
 	}
 }
 

@@ -26,11 +26,11 @@ inline std::string rtrim_copy(std::string s) {
     rtrim(s);
     return s;
 }
-inline std::string trim_copy(std::string s) {
-    trim(s);
-    return s;
-}
 inline void trim(std::string& s) {
     rtrim(s);
     ltrim(s);
+}
+inline std::string trim_copy(std::string s) {
+    trim(s);
+    return s;
 }
