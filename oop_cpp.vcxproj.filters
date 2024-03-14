@@ -16,6 +16,9 @@
     <Filter Include="const\error">
       <UniqueIdentifier>{09c61c91-136f-476c-be78-90acf5593532}</UniqueIdentifier>
     </Filter>
+    <Filter Include="validation">
+      <UniqueIdentifier>{13ce7b36-68bb-4148-8f1b-2d4708a0b2c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,6 +30,9 @@
     <ClCompile Include="error.cpp">
       <Filter>const\error</Filter>
     </ClCompile>
+    <ClCompile Include="validation.cpp">
+      <Filter>validation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="user.h">
@@ -37,6 +43,9 @@
     </ClInclude>
     <ClInclude Include="error.h">
       <Filter>const\error</Filter>
+    </ClInclude>
+    <ClInclude Include="validation.h">
+      <Filter>validation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

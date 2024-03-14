@@ -1,7 +1,7 @@
 #include "user.h"
 
 int main() {
-	string* login = nullptr;//new string("my_login");
+	string* login = new string("   xx    ");
 	User* user = new User(login);
 }
 
