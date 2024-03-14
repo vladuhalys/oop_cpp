@@ -10,6 +10,12 @@
     <Filter Include="library">
       <UniqueIdentifier>{2688dcdd-80c0-4a70-88a7-3d3dcd98a0d8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="const">
+      <UniqueIdentifier>{597028ff-7d40-4d45-830b-88170476f25b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="const\error">
+      <UniqueIdentifier>{09c61c91-136f-476c-be78-90acf5593532}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -18,6 +24,9 @@
     <ClCompile Include="user.cpp">
       <Filter>user</Filter>
     </ClCompile>
+    <ClCompile Include="error.cpp">
+      <Filter>const\error</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="user.h">
@@ -25,6 +34,9 @@
     </ClInclude>
     <ClInclude Include="library.h">
       <Filter>library</Filter>
+    </ClInclude>
+    <ClInclude Include="error.h">
+      <Filter>const\error</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
